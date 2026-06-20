@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.square {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  position: absolute;
+  top: -80px;
+  left: -100px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+
+.circle {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, #00c6ff, #0072ff);
+  position: absolute;
+  bottom: -100px;
+  right: -120px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+.weather-box {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0,198,255,0.4);
+}
+
+
+.weather-box h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+button:hover {
+  transform: scale(1.05);
+}
+
+
+#weatherResult {
+  margin-top: 20px;
+  font-size: 18px;
+}
